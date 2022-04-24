@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <meta name="description" content="this is a description" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script defer src="./assets/js/app.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Metropolis;
+        }
+        
+        div.choices {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 200px;
+        }
+        
+        img {
+            width: 100px;
+            border: 2px solid red;
+            border-radius: 30%;
+            padding: 5px;
+            transition: 0.3s ease-in;
+            margin: 0px 50px;
+        }
+        
+        img:hover {
+            cursor: pointer;
+            box-shadow: rgb(255, 3, 3) 5px 8px 20px;
+        }
+
+        div.result {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        div.board h1{
+            padding-top: 40px;
+            padding-left: 50px;
+        }
+
+        div.game h1{
+            justify-content: center;
+            display: flex;
+            padding-top: 30px;
+            color: rgb(0, 0, 0);
+           
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="game">
+        
+        <h1>ROCK | PAPER | SCISSOR GAME</h1>
+    </div>
+
+    <div class="board">
+        <h1>User: <span id="user">0</span></h1>
+        <h1>Computer: <span id="computer">0</span></h1>
+    </div>
+    <div class="choices">
+        <img src="https://www.svgrepo.com/show/114864/fist.svg" alt="rock" id="rock" />
+
+        <img src="https://www.svgrepo.com/show/323911/paper.svg" alt="paper" id="paper" />
+
+        <img src="https://cdn-icons.flaticon.com/png/512/3153/premium/3153001.png?token=exp=1650721371~hmac=00c943d880debb78a8701361b00c0da2" alt="scissor" id="scissor" />
+    </div>
+    <br>
+    <div class="result">
+        <h1></h1>
+    </div>
+</body>
+
+</html>
